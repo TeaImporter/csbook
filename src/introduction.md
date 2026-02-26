@@ -5,3 +5,6 @@ This book is actually just my notes organised in a way that is somewhat semblent
 
 Please fact check a solid portion of the content against the spec, its very likely that information here is NOT what the exam board wants.
 
+> [!IMPORTANT]  
+> Please note that this book is under HEAVY construction since I'm still going through the spec myself lol
+> I am currently working on: [mdBook](./paper_1/1.2_software_and_software_development.md)

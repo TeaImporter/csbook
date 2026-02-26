@@ -1,50 +1,52 @@
-name: Release to Cloudflare Page
+# im trying to replace this with the cf pages builder but imma keep this here
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+# name: Release to Cloudflare Page
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# on:
+#   push:
+#     branches: [main]
+#   workflow_dispatch:
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# permissions:
+#   contents: write
+#   pages: write
+#   id-token: write
 
-jobs:
-  cloudflare-pages-release:
-    timeout-minutes: 10
-    runs-on: ubuntu-latest
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
 
-    steps:
-      - uses: actions/checkout@v4
+# jobs:
+#   cloudflare-pages-release:
+#     timeout-minutes: 10
+#     runs-on: ubuntu-latest
 
-      - name: Download and install Trunk binary
-        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/0.5.2/mdbook-0.5.2-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Build book
-        run: ./mdbook build
+#       - name: Download and install Trunk binary
+#         run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/0.5.2/mdbook-0.5.2-x86_64-unknown-linux-gnu.tar.gz | tar -xz
 
-      - name: Deploy
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./book --project-name=example
-          # Optional: Enable this if you want to have GitHub Deployments triggered
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Build book
+#         run: ./mdbook build
 
-    #   - name: Publish to Cloudflare Pages
-    #     uses: cloudflare/pages-action@v1 # TODO: switch this to the non deprecated one
-    #     with:
-    #       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-    #       accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-    #       projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
-    #       directory: './book'
-    #       # # Optional: Enable this if you want to have GitHub Deployments triggered
-    #       # gitHubToken: ${{ secrets.GH_TOKEN }}
+#       - name: Deploy
+#         uses: cloudflare/wrangler-action@v3
+#         with:
+#           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+#           command: pages deploy ./book --project-name=example
+#           # Optional: Enable this if you want to have GitHub Deployments triggered
+#           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+#     #   - name: Publish to Cloudflare Pages
+#     #     uses: cloudflare/pages-action@v1 # TODO: switch this to the non deprecated one
+#     #     with:
+#     #       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#     #       accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+#     #       projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+#     #       directory: './book'
+#     #       # # Optional: Enable this if you want to have GitHub Deployments triggered
+#     #       # gitHubToken: ${{ secrets.GH_TOKEN }}
 
           
