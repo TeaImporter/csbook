@@ -1,0 +1,50 @@
+name: Release to Cloudflare Page
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  cloudflare-pages-release:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and install Trunk binary
+        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/0.5.2/mdbook-0.5.2-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+
+      - name: Build book
+        run: ./mdbook build
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./book --project-name=example
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+    #   - name: Publish to Cloudflare Pages
+    #     uses: cloudflare/pages-action@v1 # TODO: switch this to the non deprecated one
+    #     with:
+    #       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    #       accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    #       projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+    #       directory: './book'
+    #       # # Optional: Enable this if you want to have GitHub Deployments triggered
+    #       # gitHubToken: ${{ secrets.GH_TOKEN }}
+
+          
