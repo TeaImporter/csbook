@@ -7,4 +7,5 @@ Please fact check a solid portion of the content against the spec, its very like
 
 > [!IMPORTANT]  
 > Please note that this book is under HEAVY construction since I'm still going through the spec myself lol
-> I am currently working on: [mdBook](./paper_1/1.2_software_and_software_development.md)
+> I am currently working on: [mdBook](./paper_1/1.2/1.2.4_types_of_programming_language.md)
+> A large portion of the book will also need to be refactored and restructed. Do
