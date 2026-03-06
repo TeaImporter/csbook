@@ -2,3 +2,6 @@
 title = "OCR H446 Textbook"
 authors = ["Hikari"]
 language = "en"
+
+[output.html]
+git-repository-url = "https://github.com/cattoyt/csbook"
