@@ -3,10 +3,3 @@
 Oh no
 
 RELOCATE THIS TO KYUUN.TECH/BOOK OR BOOK.KYUUN.TECH
-
-## Changelog:
-
-### 16/3/26:  
-- Added 1.2.4
-- Added 1.3.1
-- Reformatted the internal files

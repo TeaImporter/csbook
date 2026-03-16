@@ -1,5 +1,6 @@
 # Summary
 [Introduction](./introduction.md)
+[Changelog](./CHANGELOG.md)
 # Paper 1 — Computer systems
 
 - [Systems architecture](./paper_1/1.1_systems_architecture.md)

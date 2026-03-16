@@ -9,5 +9,14 @@ Please fact check a solid portion of the content against the spec, its very like
 
 > [!IMPORTANT]  
 > Please note that this book is under HEAVY construction since I'm still going through the spec myself lol
-> I am currently working on: [mdBook](./paper_1/1.2/1.2.4_types_of_programming_language.md)
-> A large portion of the book will also need to be refactored and restructed. Do
+> A large portion of the book will also need to be refactored and restructured.
+
+The following chapters are considered mostly complete:
+- 1.2.3
+- 1.2.4
+- 1.3.1
+
+The last update was:  
+[![GitHub last commit](https://img.shields.io/github/last-commit/cattoyt/csbook)](https://github.com/cattoyt/csbook)
+
+See changelog [here](https://github.com/CattoYT/csbook/blob/main/src/CHANGELOG.md)
