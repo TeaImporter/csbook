@@ -1,4 +1,6 @@
 # Summary
+![GitHub last commit](https://img.shields.io/github/last-commit/cattoyt/csbook?path=src%2FSUMMARY.md&label=Last%20updated)
+
 [Introduction](./introduction.md)
 [Changelog](./CHANGELOG.md)
 # Paper 1 — Computer systems

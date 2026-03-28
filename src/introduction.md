@@ -1,4 +1,6 @@
 # Introduction
+![GitHub last commit](https://img.shields.io/github/last-commit/cattoyt/csbook?path=src%2Fintroduction.md&label=Last%20updated)
+
 
 Welcome to the unofficial textbook for OCR A Level Computer Science (h446).  
 This book is actually just my notes organised in a way that is somewhat semblent of a textbook. 
