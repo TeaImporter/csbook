@@ -7,7 +7,9 @@ This book is actually just my notes organised in a way that is somewhat semblent
 
 Please fact check a solid portion of the content against the spec, its very likely that information here is NOT what the exam board wants.
 
+If you are taking AS-Level (why), refer to the specification for what's necessary and what isn't. 
 
+A live dev version can be seen on [dev.kyuun.tech](https://dev.kyuun.tech), which is live whenever I am actively writing parts of the book. It may contain changes that are not present on the liv/stable version at [book.kyuun.tech](https://book.kyuun.tech)!
 
 > [!IMPORTANT]  
 > Please note that this book is under HEAVY construction since I'm still going through the spec myself lol

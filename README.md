@@ -2,6 +2,13 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/cattoyt/csbook?path=README.md&label=Last%20updated)
 
 
-Oh no
+Any AI used within this project will be explicitly labelled within the file it's used in. It's usage will remain incredibly limited within this book and will be rewritten as soon as possible.
 
-RELOCATE THIS TO KYUUN.TECH/BOOK OR BOOK.KYUUN.TECH
+To host locally:
+
+```
+git clone https://github.com/cattoyt/csbook
+cd csbook
+cargo install mdbook
+mdbook serve 
+```

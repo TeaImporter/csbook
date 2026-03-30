@@ -1,6 +1,8 @@
 # Changelog:
 ![GitHub last commit](https://img.shields.io/github/last-commit/cattoyt/csbook?path=src%2FCHANGELOG.md&label=Last%20updated)
 
+## 28/3/26 - v0.1.3
+- Finished 1.1
 
 ## 16/3/26 - v0.1.2
 - Added [1.2.4](./paper_1/1.2/1.2.4_types_of_programming_language.md)
