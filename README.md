@@ -4,6 +4,8 @@
 
 Any AI used within this project will be explicitly labelled within the file it's used in. It's usage will remain incredibly limited within this book and will be rewritten as soon as possible.
 
+See the introduction page for more detailed information.
+
 To host locally:
 
 ```
