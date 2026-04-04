@@ -2,6 +2,8 @@
 
 [Introduction](./introduction.md)
 [Changelog](./CHANGELOG.md)
+[Acknowledgements](./credits.md)
+
 # Paper 1 — Computer systems
 
 - [Systems architecture](./paper_1/1.1_systems_architecture.md)
@@ -31,3 +33,5 @@
 
 # Paper 2 — Algorithms and programming
 
+
+---
