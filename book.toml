@@ -6,3 +6,7 @@ language = "en"
 [output.html]
 git-repository-url = "https://github.com/cattoyt/csbook"
 mathjax-support = true
+
+# https://github.com/jhult/mdBook/tree/feat/no-html-ext
+# SPECIFIC TO THIS FORK
+no-html-extension=true
