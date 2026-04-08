@@ -7,3 +7,11 @@ Massive thanks to the following people:
 - CXS, for being a brilliant teacher despite the hiring issues at the start of the year
 - All the maintainers of [rust-lang/mdBook](https://github.com/rust-lang/mdBook) for being chads
 - And you, the reader for making this (not really) worth it
+
+Sources for information include:
+- [Wikipedia](https://wikipedia.org)
+- [Issac Computer Science](https://isaaccomputerscience.org)
+- My own SLRs
+- [Physics and Maths Tutor](https://www.physicsandmathstutor.com/computer-science-revision/a-level-ocr/)
+
+Please refer to the above for any additional information or clarification!

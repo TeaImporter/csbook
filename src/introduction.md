@@ -15,9 +15,11 @@ It may contain changes that are not present on the live/stable version at [book.
 > [!IMPORTANT]  
 > Please note that this book is under HEAVY construction since I'm still going through the spec myself lol
 > A large portion of the book will also need to be refactored and restructured.
+> If there is a mistake, or you want to contribute a page, please send a pull request on [Github!](https://github.com/cattoyt/csbook)
 
 The following chapters are considered mostly complete:
 - 1.1.1
+- 1.1.2
 - 1.2.3
 - 1.2.4
 - 1.3.1
