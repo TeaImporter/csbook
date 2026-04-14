@@ -33,5 +33,8 @@
 
 # Paper 2 — Algorithms and programming
 
-
+- [Algorithms](./paper_2/2.3_Algorithms.md)
+    - [Search Algorithms](./paper_2/2.3/search_algorithms.md)
+    - [Sorting Algorithms](./paper_2/2.3/sorting_algorithms.md)
+    - [Pathfinding Algorithms](./paper_2/2.3/pathfinding_algorithms.md)
 ---
