@@ -6,7 +6,7 @@ The linear search algorithms searches an array in a __linear fashion__.
 
 This means that it checks the first element, then the second, third, etc.
 
-Therefore, linear search has an average (and worst case) time complexity of O(n), since the time grows at the same rate as the dataset grows.
+Linear search has an average (and worst case) time complexity of O(n), since the time grows at the same rate as the dataset grows.
 
 
 > [!NOTE]
